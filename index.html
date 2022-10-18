@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Navbar</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <h1>Hello, world!</h1>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md">
+        <!-- pour colonne de largeur égale j'ai choisi <div class="container text-center">
+    <div class="row"> <div class="col-md"> pour les trois colonnes
+      j'ai inspecté quand c'est pour les medium devices colonne côte-à-côte et dans les small devices sont ampilées -->
+        titres
+      </div>
+      <div class="col-md">
+        paragraphes
+      </div>
+      <div class="col-md">
+        images
+      </div>
+    </div>
+    <!-- j'ai ajouté une ligne avec deux contenus de largeur pas égale dans les small devices en inserant 
+      <div class="row"> <div class="col-sm-4"> <div class="col-sm-8"> c-a-d un row et 2 colonnes et j'ai inspecté que pour les small devices les colonne  sont côte-à-côte et ampilées pour les plus grands devices -->
+
+
+        <div class="row">
+          <div class="col-sm-8">
+            
+            <div class="card" style="width: 18rem;">
+              <img src="mape.jpg" class="card-img-top" alt="map">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+
+
+          </div>
+          <div class=" col-sm-4">
+            paragraphes
+          </div>
+          
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
