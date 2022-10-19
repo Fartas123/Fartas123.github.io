@@ -8,29 +8,64 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link href="index.css" rel="stylesheet">
+   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrapicons@1.9.1/font/bootstrap-icons.css">
 </head>
 
-<body>
 
-  <nav class="navbar bg-light">
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand">Navbar</a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <h1>Hello, world!</h1>
 
-  <div class="container text-center">
+  <h1>Hello, world!</h1> 
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-emoji-wink" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"/>
+  </svg>
+  <button type="button" class="btn btn-success">Success</button>
+  
+  
+  <blockquote class="blockquote">
+    <!-- l'utilisation de la class="py-md-5" dans un div nous permis d'aérer le document html en ajoutant un espace entre les lignes "marge et espacement" -->
+     <div class="py-md-5"><p>A well-known quote, contained in a blockquote element.</p>
+       </blockquote></div>.
+
+
+
+
+ 
+  <div class="container text-center" >
     <div class="row">
       <div class="col-md">
         <!-- pour colonne de largeur égale j'ai choisi <div class="container text-center">
     <div class="row"> <div class="col-md"> pour les trois colonnes
       j'ai inspecté quand c'est pour les medium devices colonne côte-à-côte et dans les small devices sont ampilées -->
         titres
+        
       </div>
       <div class="col-md">
         paragraphes
@@ -41,7 +76,7 @@
     </div>
     <!-- j'ai ajouté une ligne avec deux contenus de largeur pas égale dans les small devices en inserant 
       <div class="row"> <div class="col-sm-4"> <div class="col-sm-8"> c-a-d un row et 2 colonnes et j'ai inspecté que pour les small devices les colonne  sont côte-à-côte et ampilées pour les plus grands devices -->
-
+        
 
         <div class="row">
           <div class="col-sm-8">
@@ -50,39 +85,42 @@
               <img src="mape.jpg" class="card-img-top" alt="map">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"></p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
 
 
           </div>
-          <div class=" col-sm-4">
-            paragraphes
-
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class=" col-sm-4" >
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="life.jpg" class="d-block w-100" alt="nature">
+                  <img src="tree.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="road.jpg" class="d-block w-100" alt="nature">
+                  <img src="life.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="tree" class="d-block w-100" alt="nature">
+                  <img src="road.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
           </div>
+
           
   </div>
 
